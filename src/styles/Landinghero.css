@@ -1,0 +1,168 @@
+.landing-hero {
+    height: 92vh;
+    width: 100%;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: changeBgImage;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: -5s;
+}
+@keyframes changeBgImage {
+    0% {
+        background: url(../assets/picture03.webp);
+        background-size: cover;
+        background-position: center;
+    }
+        25% {
+        background: url(../assets/picture02.webp);
+        background-size: cover;
+        background-position: center;
+    }
+        50% {
+        background: url(../assets/picture01.webp);
+        background-size: cover;
+        background-position: center;
+    }
+        75% {
+        background: url(../assets/picture00.webp);
+        background-size: cover;
+        background-position: center;
+    }
+        100% {
+        background: url(../assets/picture03.webp);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.landing-hero > div {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top right, rgba(0, 0, 0,0.9), rgba(0, 0, 0, 0.2) 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-hero-box {
+    max-width: var(--max-width);
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.landing-hero-box h1 {
+    font-size: 5rem;
+    max-width: 48%;
+    color: var(--color-8);
+}
+.landing-hero-box p {
+    max-width: 45%;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--color-7);
+}
+.landing-hero .landing-hero-cross-banner {
+    width: 60%;
+    height: 70px;
+    background-color: var(--color-0);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    box-shadow: 0px 0px 20px darkslategray;
+}
+.landing-hero .landing-hero-cross-banner > div {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.landing-hero .landing-hero-cross-banner > div .banner-text{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.landing-hero .landing-hero-cross-banner > div:last-child{
+    height: 100%;
+    border-radius: 100px;
+    background: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-0);
+    font-weight: 600;
+    padding: 0 40px;
+}
+@media screen and (max-width:1200px) {
+    .landing-hero-box {
+        max-width: 90%;
+    }
+    .landing-hero-box h1 {
+        max-width: 68%;
+    }
+    .landing-hero-box p {
+        max-width: 65%;
+    }
+    .landing-hero .landing-hero-cross-banner {
+        width: 80%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .landing-hero .landing-hero-cross-banner {
+        width: 90%;
+    }
+}
+@media screen and (max-width:768px) {
+    .landing-hero-box {
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .landing-hero-box h1 {
+        max-width: 98%;
+    }
+    .landing-hero-box p {
+        max-width: 75%;
+    }
+    .landing-hero .landing-hero-cross-banner {
+        width: 100%;
+    }
+    
+    .landing-hero .landing-hero-cross-banner > div {
+        padding: 0 20px;
+    }
+    .landing-hero .landing-hero-cross-banner > div .banner-text{
+        font-weight: 300;
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .landing-hero {
+        height: 90vh;
+    }
+    .landing-hero-box {
+        max-width: var(--max-width);
+        height: 70%;
+    }
+    .landing-hero-box h1 {
+        font-size: 3rem;
+        max-width: 100%;
+    }
+    .landing-hero-box p {
+        max-width: 90%;
+    }
+    .landing-hero .landing-hero-cross-banner {
+        width: fit-content;
+        height: 70px;
+        background-color: transparent;
+    }
+    .landing-hero .landing-hero-cross-banner > div .banner-text{
+        display: none;
+    }
+    .landing-hero .landing-hero-cross-banner > div:first-child{
+        display: none;
+    }
+}

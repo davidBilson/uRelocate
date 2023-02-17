@@ -1,0 +1,50 @@
+.exclusive-section {
+    max-width: var(--max-width-2);
+    margin: 100px auto;
+    padding:0 1rem 1rem 1rem;
+    /* border-radius: 1rem;
+    border: 1px solid lightgrey; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.button-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 5vh;
+    z-index: 1;
+    background: white;
+}
+.button-select button {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.button-select button.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Cards */
+.first-exclusive-card {
+    height: 350px;
+}
+.second-exclusive-cards {
+    display: flex;
+    gap: 1rem;
+}
+.second-exclusive-cards article {
+    height: 320px;
+}
+.card-blue {
+    background: dodgerblue;
+}
+.card-orange {
+    background: orange;
+}
+.card-crimson {
+    background: crimson;
+}
