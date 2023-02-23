@@ -1,14 +1,16 @@
 .landing-hero {
-    height: 92vh;
+    height: 880px;
     width: 100%;
-    animation-timing-function: linear;
+    background: url(../assets/picture01.webp);
+    background-size: cover;
+        background-position: center;
+    /* animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-name: changeBgImage;
     animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-delay: -5s;
+    animation-iteration-count: infinite; */
 }
-@keyframes changeBgImage {
+/* @keyframes changeBgImage {
     0% {
         background: url(../assets/picture03.webp);
         background-size: cover;
@@ -34,7 +36,7 @@
         background-size: cover;
         background-position: center;
     }
-}
+} */
 .landing-hero > div {
     height: 100%;
     width: 100%;
@@ -57,6 +59,9 @@
     max-width: 48%;
     color: var(--color-8);
 }
+span.hero-head-diff {
+    color: var(--color1);
+}
 .landing-hero-box p {
     max-width: 45%;
     font-weight: 500;
@@ -66,7 +71,7 @@
 .landing-hero .landing-hero-cross-banner {
     width: 60%;
     height: 70px;
-    background-color: var(--color-0);
+    background-color: var(--color4);
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
@@ -88,13 +93,30 @@
 .landing-hero .landing-hero-cross-banner > div:last-child{
     height: 100%;
     border-radius: 100px;
-    background: var(--color-3);
+    background: var(--color2);
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-0);
-    font-weight: 600;
+    font-weight: 500;
     padding: 0 40px;
+    box-shadow: 0px 0px 20px lightgrey;
+    transition: .3s ease-in-out;
+}
+.landing-hero .landing-hero-cross-banner > div:last-child:hover {
+    background: var(--color4);
+    color: black;
+    box-shadow: 0px 0px 40px lightgrey;
+}
+.landing-hero .landing-hero-cross-banner > div:last-child a{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
 }
 @media screen and (max-width:1200px) {
     .landing-hero-box {
@@ -158,11 +180,30 @@
         width: fit-content;
         height: 70px;
         background-color: transparent;
+        box-shadow: none;
     }
     .landing-hero .landing-hero-cross-banner > div .banner-text{
         display: none;
     }
     .landing-hero .landing-hero-cross-banner > div:first-child{
         display: none;
+    }
+    .landing-hero .landing-hero-cross-banner > div:last-child{
+        height: 100%;
+        border-radius: 100px;
+        background: var(--color-3);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-0);
+        font-weight: 600;
+        padding: 0 40px;
+        box-shadow: none;
+    }
+    .landing-hero .landing-hero-cross-banner > div:last-child:hover {
+        background: white;
+        color: black;
+        box-shadow: none;
     }
 }

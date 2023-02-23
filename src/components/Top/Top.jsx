@@ -23,10 +23,10 @@ const Top = () => {
           <img src={Ukraine} id="ukraine" alt="" />
         </div>
         <div className="nav-social">
-        <p className='dim'>Follow us on</p>
-            <FaFacebookF />
-            <FiInstagram />
-            <FaTwitter />
+          <p className='dim'>Follow us on</p>
+          <a href="#"><FaFacebookF /></a>
+          <a href="#"><FiInstagram /></a>
+            <a href=""><FaTwitter /></a>
         </div>
       </div>
     </div>

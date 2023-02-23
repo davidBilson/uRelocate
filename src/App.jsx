@@ -7,7 +7,6 @@ import Influencer from './components/Influencer/Influencer'
 import LandingHero from './components/LandingHero/LandingHero'
 import Nav from './components/NavBar/Nav'
 import NewsLetter from './components/NewsLetter/NewsLetter'
-import SectionTwo from './components/SectionTwo/SectionTwo'
 import Top from './components/Top/Top'
 import './styles/Cards.css'
 
@@ -18,15 +17,13 @@ function App() {
       <Top />
       <Nav />
       <LandingHero />
-      {/* <FeaturedTitle id="featured" FeaturedTitle="Featured" classNameFeatured="featured-header" FeaturedTag="Releases"/>
+      <FeaturedTitle id="featured" FeaturedTitle="Featured" classNameFeatured="featured-header" FeaturedTag="Releases"/>
       <Hero />
       <ExclusiveSection />
-      <FeaturedTitle FeaturedTitle="What's New?" classNameFeatured="featured-header featured-header-two" FeaturedTag="Releases"/>
-      <SectionTwo />
       <Influencer />
-      <Fourcategory />
+      {/* <Fourcategory /> */}
       <NewsLetter />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }

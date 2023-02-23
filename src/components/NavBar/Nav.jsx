@@ -12,9 +12,10 @@ const Nav = () => {
     <a href="#" className="brand-name">
             <span>
             <img src={Logo} alt="" className="logo-img" />
-            URELOCATE
+            ReloRoots
             </span>
     </a>
+    {/* make this hamburger change to x on click */}
     <button className="hamburger" onClick={() => {
           setIsNavExpanded(!isNavExpanded)
         }}>
@@ -37,7 +38,7 @@ const Nav = () => {
           <a href="#contact" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Advert</a>
         </li>
         <li>
-          <a id='loginBtn' href="#contact" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Login</a>
+          <a id='loginBtn' href="#contact" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Sign Up</a>
         </li>
       </ul>
     </div>

@@ -13,7 +13,7 @@ const SIngleFooterWidgetThree = () => {
                     </div>
                     <div>
                         <h4>Countries Accepting Immigrants Hassle-free</h4>
-                        <p><DateIcon />February 2, 2023</p>
+                        <p><DateIcon /> February 2, 2023</p>
                     </div>
                 </article>
                 <article>
@@ -22,7 +22,7 @@ const SIngleFooterWidgetThree = () => {
                     </div>
                     <div>
                         <h4>Countries Accepting Immigrants Hassle-free</h4>
-                        <p><DateIcon />February 2, 2023</p>
+                        <p><DateIcon /> February 2, 2023</p>
                     </div>
                 </article>
                 <article>
@@ -31,7 +31,7 @@ const SIngleFooterWidgetThree = () => {
                     </div>
                     <div>
                         <h4>Countries Accepting Immigrants Hassle-free</h4>
-                        <p><DateIcon />February 2, 2023</p>
+                        <p><DateIcon /> February 2, 2023</p>
                     </div>
                 </article>
             </div>

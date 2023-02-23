@@ -1,5 +1,4 @@
 import Card from '../Cards/CardOne'
-
 const HeroGrid = () => {
     const heroCard = [
         {
@@ -60,5 +59,4 @@ const HeroGrid = () => {
     </div>
   )
 }
-
 export default HeroGrid

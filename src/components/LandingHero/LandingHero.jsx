@@ -14,7 +14,7 @@ const LandingHero = () => {
     <section style={{animationDuration: animationDuration.current}} className="landing-hero">
         <div>
             <div className='landing-hero-box'>
-                <h1>Discover the Possibilities of Migration</h1>
+                <h1>Discover the <span className="hero-head-diff">Possibilities</span>  of Migration</h1>
                 <p>Join our community and gain access to expert advice, success stories, and a step-by-step guide to help you navigate the complexities of migration and achieve your dreams abroad.</p>
                 <LandingCrossBanner />
             </div>

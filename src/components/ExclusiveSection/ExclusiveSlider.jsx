@@ -20,12 +20,12 @@ export default () => {
             });
           } else if (window.innerWidth < 480) {
             setBreakpoint({
-              slidesPerView: 1,
+              slidesPerView: 1.2,
               spaceBetween: 20,
             });
           } else if (window.innerWidth < 768) {
             setBreakpoint({
-              slidesPerView: 2.1,
+              slidesPerView: 2.3,
               spaceBetween: 20,
             });
           } else if (window.innerWidth < 1024) {
@@ -38,11 +38,10 @@ export default () => {
               slidesPerView: 3.8,
               spaceBetween: 20,
             });
-          }
-           else {
+          } else {
             setBreakpoint({
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 20,
             });
           }
         };
@@ -77,12 +76,7 @@ export default () => {
           id:5,
           image:ImageThree,
           name:"Ariana Anderson"
-        },
-        {
-          id:6,
-          image:ImageThree,
-          name:"Ariana Anderson"
-        },
+        }
       ]
       const swipeSlide = sliderData.map(slide => (
         <SwiperSlide key={slide.id}>
