@@ -1,7 +1,7 @@
 import {BiMenuAltRight} from 'react-icons/bi'
 import './Navbar.css'
 import { useState } from 'react'
-import Logo from '../../assets/logo.webp'
+import Logo from '../../assets/logo.png'
 
 const Nav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
