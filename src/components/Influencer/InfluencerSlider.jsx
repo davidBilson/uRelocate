@@ -3,14 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState, useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import ImageThree from '../../assets/unknown.png'
+import InlfuencerData from './InlfuencerData';
 
 export default () => {
     const [breakpoint, setBreakpoint] = useState({
         slidesPerView: 4,
         spaceBetween: 50,
       });
-    
       useEffect(() => {
         const handleResize = () => {
           if (window.innerWidth < 320) {
@@ -51,39 +50,8 @@ export default () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
       }, []);
-      const sliderData = 
-      [
-        {
-          id:1,
-          image:ImageThree,
-          name:"John Doe"
-        },
-        {
-          id:2,
-          image:ImageThree,
-          name:"Jason Momo"
-        },
-        {
-          id:3,
-          image:ImageThree,
-          name:"Ariana Anderson"
-        },
-        {
-          id:4,
-          image:ImageThree,
-          name:"Ariana Anderson"
-        },
-        {
-          id:5,
-          image:ImageThree,
-          name:"Ariana Anderson"
-        },
-        {
-          id:6,
-          image:ImageThree,
-          name:"Ariana Anderson"
-        },
-      ]
+      const sliderData = InlfuencerData
+      
       const swipeSlide = sliderData.map(slide => (
         <SwiperSlide key={slide.id}>
         <div className="swiper-content">

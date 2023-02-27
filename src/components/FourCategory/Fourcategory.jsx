@@ -1,4 +1,3 @@
-import React from 'react'
 import HotCategory from './HotCategory'
 import SocialCategory from './SocialCategory'
 import '../../styles/FourCategory.css'
@@ -9,11 +8,11 @@ import CategoryFive from './CategoryFive'
 const Fourcategory = () => {
   return (
     <section className='four-category'>
-        <HotCategory />
+        <CategoryFive />
         <CategoryThree />
         <CategoryFour />
+        <HotCategory />
         <SocialCategory />
-        <CategoryFive />
     </section>
   )
 }

@@ -21,7 +21,7 @@ function App() {
       <Hero />
       <ExclusiveSection />
       <Influencer />
-      {/* <Fourcategory /> */}
+      <Fourcategory />
       <NewsLetter />
       <Footer />
     </>
