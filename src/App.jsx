@@ -1,28 +1,24 @@
-import ExclusiveSection from './components/ExclusiveSection/ExclusiveSection'
-import FeaturedTitle from './components/FeaturedTitle/FeaturedTitle'
+// import ExclusiveSection from './components/ExclusiveSection/ExclusiveSection'
+// import FeaturedTitle from './components/FeaturedTitle/FeaturedTitle'
 import Footer from './components/Footer/Footer'
-import Fourcategory from './components/FourCategory/Fourcategory'
-import Hero from './components/Hero/Hero'
-import Influencer from './components/Influencer/Influencer'
-import LandingHero from './components/LandingHero/LandingHero'
-import Nav from './components/NavBar/Nav'
-import NewsLetter from './components/NewsLetter/NewsLetter'
+import NavBar from './components/NavBar/Nav'
 import Top from './components/Top/Top'
 import './styles/Cards.css'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './components/HomePage/Home'
+import AboutUs from './components/AboutUs/About'
+import PageNotFound from './components/PageNotFound/PageNotFound'
 
-
-function App() {
+const App = () => {
   return (
     <>
       <Top />
-      <Nav />
-      <LandingHero />
-      <FeaturedTitle id="featured" FeaturedTitle="Featured" classNameFeatured="featured-header" FeaturedTag="Releases"/>
-      <Hero />
-      <ExclusiveSection />
-      <Influencer />
-      <Fourcategory />
-      <NewsLetter />
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='about' element={<AboutUs />} />
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
       <Footer />
     </>
   )

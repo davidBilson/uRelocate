@@ -3,7 +3,7 @@ import '../../styles/Newsletter.css'
 
 const NewsLetter = () => {
   return (
-    <section className='newsletter-container'>
+    <section className='newsletter-container' id='newsletter'>
         <div>
             <h2>Subscribe To Our Weekly Newsletter</h2>
         </div>

@@ -1,0 +1,59 @@
+.page-not-found {
+    padding: 3rem 20px;
+}
+.page-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.page-container h3 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.page-container p {
+    font-size: 1.2rem;
+    color: var(--color-5);
+    margin-bottom: 2.25rem;
+}
+.page-back-btn {
+    padding: 1rem 5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--color-1);
+    color: var(--color-0);;
+}
+.lottie-error {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    /* height: 300px; */
+    /* background: red; */
+}
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:1024px) {
+    .page-container h3 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }   
+}
+@media screen and (max-width:768px) {
+    .page-container h3 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }   
+    .page-container p {
+        font-size: 1rem;
+        color: var(--color-5);
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .page-container h3 {
+        font-size: 1.5rem;
+    }
+}

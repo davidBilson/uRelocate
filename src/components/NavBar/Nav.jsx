@@ -1,7 +1,8 @@
-import {BiMenuAltRight} from 'react-icons/bi'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import './Navbar.css'
 import { useState } from 'react'
 import Logo from '../../assets/logo.png'
+import { Link, NavLink } from 'react-router-dom'
 
 const Nav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -9,36 +10,39 @@ const Nav = () => {
   return (
     <header className='nav-header'>
     <nav className="navigation">
-    <a href="#" className="brand-name">
+    <Link to="/" className="brand-name">
             <span>
             <img src={Logo} alt="" className="logo-img" />
             ReloRoots
             </span>
-    </a>
+    </Link>
     {/* make this hamburger change to x on click */}
-    <button className="hamburger" onClick={() => {
+    {/* <button className="hamburger" onClick={() => {
           setIsNavExpanded(!isNavExpanded)
         }}>
-      <BiMenuAltRight />
+      <AiOutlineMenu />
+    </button> */}
+    <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
+      {isNavExpanded ? <AiOutlineClose /> : <AiOutlineMenu />}
     </button>
     <div
       className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
       <ul>
         <li>
-          <a href="#about" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Home</a>
+          <NavLink to="/" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Home</NavLink>
         </li>
         <li>
-          <a href="#portfolio" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>About Us</a>
+          <NavLink to="/about" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>About Us</NavLink>
         </li>
         <li>
-          <a href="#contact" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Community</a>
+          <NavLink  to="/newsletter" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Community</NavLink>
         </li>
         <li>
-          <a href="#contact" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Advert</a>
+          <NavLink  to="/advert" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Advert</NavLink>
         </li>
         <li>
-          <a id='loginBtn' href="#contact" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Sign Up</a>
+          <Link id='loginBtn'  to="/signup" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Sign Up</Link>
         </li>
       </ul>
     </div>
