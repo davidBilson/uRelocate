@@ -16,12 +16,6 @@ const Nav = () => {
             ReloRoots
             </span>
     </Link>
-    {/* make this hamburger change to x on click */}
-    {/* <button className="hamburger" onClick={() => {
-          setIsNavExpanded(!isNavExpanded)
-        }}>
-      <AiOutlineMenu />
-    </button> */}
     <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
       {isNavExpanded ? <AiOutlineClose /> : <AiOutlineMenu />}
     </button>

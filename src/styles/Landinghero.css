@@ -3,40 +3,8 @@
     width: 100%;
     background: url(../assets/picture01.webp);
     background-size: cover;
-        background-position: center;
-    /* animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-name: changeBgImage;
-    animation-duration: 15s;
-    animation-iteration-count: infinite; */
+    background-position: center;
 }
-/* @keyframes changeBgImage {
-    0% {
-        background: url(../assets/picture03.webp);
-        background-size: cover;
-        background-position: center;
-    }
-        25% {
-        background: url(../assets/picture02.webp);
-        background-size: cover;
-        background-position: center;
-    }
-        50% {
-        background: url(../assets/picture01.webp);
-        background-size: cover;
-        background-position: center;
-    }
-        75% {
-        background: url(../assets/picture00.webp);
-        background-size: cover;
-        background-position: center;
-    }
-        100% {
-        background: url(../assets/picture03.webp);
-        background-size: cover;
-        background-position: center;
-    }
-} */
 .landing-hero > div {
     height: 100%;
     width: 100%;
@@ -60,7 +28,8 @@
     color: var(--color-8);
 }
 span.hero-head-diff {
-    color: var(--color1);
+    background-color: var(--color1);
+    padding: 0px 15px;
 }
 .landing-hero-box p {
     max-width: 45%;

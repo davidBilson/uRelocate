@@ -6,6 +6,7 @@ import '../../styles/TopBar.css'
 
 const Top = () => {
     const [date, setDate] = useState(new Date());
+
     useEffect(() => {
     const intervalId = setInterval(() => {
         setDate(new Date());
@@ -16,12 +17,14 @@ const Top = () => {
     const dateString = date.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' });
 
   return (
+    // Non-sticky top bar
     <div className="nav-section-one">
       <div className='nav-top'>
         <div className="nav-date">
           <p>{dateString}</p>
           <img src={Ukraine} id="ukraine" alt="" />
         </div>
+        {/* Top bar social media links */}
         <div className="nav-social">
           <p className='dim'>Follow us on</p>
           <a href="#"><FaFacebookF /></a>
