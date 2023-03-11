@@ -7,17 +7,17 @@
 .exclusive-render-button {
     width: 100%;
     background: var(--color4);
-    padding: 1rem .8rem;
+    padding: 1rem .5rem;
     box-shadow: 0px 0px 10px var(--color3);
     border-radius: 5px;
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
     position: sticky;
     top: calc(71px + 2px);
 }
 .exclusive-render-button button {
-    width: 25%;
-    padding: .7rem ;
+    width: 24%;
+    padding: .7rem .2rem;
     background-color: var(--color1);
     color: var(--color4);
     transition: .4s;
@@ -47,31 +47,7 @@
 .exclusive-container .exclusive-container-one {
     max-width: 400px;
 }
-@media screen and (max-width:1200px) {
-    .exclusive-container {
-        width: 100%;
-        margin-top: 1rem;
-        min-height: 65vh;
-        padding: 2rem;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px var(--color3);
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-    }   
-    .exclusive-container .exclusive-container-one {
-        max-width: 660px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-}
+
 .exclusive-container .exclusive-container-one h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -82,7 +58,7 @@
     margin-bottom: 2rem;
 }
 .exclusive-container .exclusive-container-one button {
-    padding: 1rem 4rem;
+    padding: 1rem;
     border-radius: 5px;
     background-color: var(--color2);
     color: white;
@@ -104,7 +80,7 @@
     gap: 1rem;
 }
 .exclusive-container .exclusive-container-two > div {
-    width: 320px;
+    max-width: 320px;
     height: 300px;
     border-radius: 10px;
     display: flex;
@@ -182,4 +158,35 @@
 }
 .exclusive-container .exc-con-four > div:nth-child(4) {
     background: #ffc107;
+}
+@media screen and (max-width:1200px) {
+    .exclusive-container {
+        width: 100%;
+        margin-top: 1rem;
+        min-height: 65vh;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px var(--color3);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }   
+    .exclusive-container .exclusive-container-one {
+        max-width: 660px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .exclusive-container .exclusive-container-one h3 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
 }
