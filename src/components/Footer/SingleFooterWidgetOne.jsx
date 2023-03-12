@@ -1,6 +1,4 @@
-import React from 'react'
-import {FaFacebookF, FaTwitter} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
+import {Link} from 'react-router-dom'
 import FooterIcon from './FooterIcon'
 
 const SingleFooterWidgetOne = () => {
@@ -9,22 +7,22 @@ const SingleFooterWidgetOne = () => {
             <h3>Helpful Links</h3>
             <div className='single-footer-widget-list'>
                 <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Coming Soon</a></li>
-                    <li><a href="">Testimonies</a></li>
-                    <li><a href="">FAQ's</a></li>
-                    <li><a href="">Advertisment</a></li>
+                    <li><Link to='/about'>About Us</Link></li>
+                    <li><Link to='/contact'>Contact Us</Link></li>
+                    <li><Link to='/policy'>Privacy Policy</Link></li>
+                    <li><Link to='/new-features'>New Features</Link></li>
+                    <li><Link to='/testimonies'>Testimonies</Link></li>
+                    <li><Link to='/faqs'>Frequently Asked Questions</Link></li>
+                    <li><Link to='/advert'>Advertisment</Link></li>
                 </ul>
                 <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Coming Soon</a></li>
-                    <li><a href="">Testimonies</a></li>
-                    <li><a href="">FAQ's</a></li>
-                    <li><a href="">Advertisment</a></li>
+                    <li><Link to='/about'>About Us</Link></li>
+                    <li><Link to='/contact'>Contact Us</Link></li>
+                    <li><Link to='/policy'>Privacy Policy</Link></li>
+                    <li><Link to='/new-features'>New Features</Link></li>
+                    <li><Link to='/testimonies'>Testimonies</Link></li>
+                    <li><Link to='/faqs'>Frequently Asked Questions</Link></li>
+                    <li><Link to='/advert'>Advertisment</Link></li>
                 </ul>
             </div>
             <h3>Follow Us</h3>

@@ -80,7 +80,7 @@
     gap: 1rem;
 }
 .exclusive-container .exclusive-container-two > div {
-    max-width: 320px;
+    width: 320px;
     height: 300px;
     border-radius: 10px;
     display: flex;
@@ -186,6 +186,9 @@
 }
 /* mobile devices */
 @media screen and (max-width:480px) {
+    .exclusive-container {
+        padding: 2rem 1rem;
+    }
     .exclusive-render-button {
         width: 100%;
         background: var(--color4);
@@ -204,6 +207,21 @@
         color: var(--color4);
         transition: .4s;
         font-size:12px;
+    }
+    .exclusive-container .exclusive-container-two > div {
+        width: 100%;
+        max-width: 320px;
+        height: fit-content;
+        padding: 16px 7px;
+    }
+    .exclusive-container .exclusive-container-two > div p {
+        font-size: .7rem;
+    }
+    .exclusive-container .exclusive-container-two > div h4 {
+        font-size: 1rem;
+    }
+    .exclusive-container .exclusive-container-two > div .exclusive-icon {
+        font-size: 2rem;
     }
     .exclusive-container .exclusive-container-one h3 {
         font-size: 1.7rem;
