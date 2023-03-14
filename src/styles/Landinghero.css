@@ -139,11 +139,19 @@ span.hero-head-diff {
         height: 70%;
     }
     .landing-hero-box h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         max-width: 90%;
+        text-align: left;
+    }
+    span.hero-head-diff {
+        background-color: var(--color1);
+        background: none;
+        padding: 0;
     }
     .landing-hero-box p {
         max-width: 90%;
+        text-align: left;
+        font-size: 15px;
     }
     .landing-hero .landing-hero-cross-banner {
         width: fit-content;
@@ -159,6 +167,7 @@ span.hero-head-diff {
     }
     .landing-hero .landing-hero-cross-banner > div:last-child{
         height: 100%;
+        width: 100%;
         border-radius: 100px;
         background: var(--color-3);
         overflow: hidden;
@@ -167,7 +176,7 @@ span.hero-head-diff {
         align-items: center;
         color: var(--color-0);
         font-weight: 600;
-        padding: 0 40px;
+        padding: 14px 60px;
         box-shadow: none;
     }
     .landing-hero .landing-hero-cross-banner > div:last-child:hover {

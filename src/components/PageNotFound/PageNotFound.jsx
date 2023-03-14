@@ -1,7 +1,13 @@
+import { useEffect } from 'react'
 import LottieAnimation from './LottieAnimation'
 import './PageNotFound.css'
 
 const PageNotFound = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+  },[]);
   return (
     <section className='page-not-found'>
         <div className="page-container">
