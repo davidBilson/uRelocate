@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import LottieAnimation from './LottieAnimation'
 import './PageNotFound.css'
+import { Link } from 'react-router-dom'
 
 const PageNotFound = () => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const PageNotFound = () => {
             <LottieAnimation />
             <h3>Oops!! Seems like we lost our way</h3>
             <p>Sorry, the page you are looking for doesn't exist or has been moved.</p>
-            <button className='page-back-btn'>Go Back</button>
+            <Link to={'/'} className="page-back-btn">Back to Home</Link>
         </div>
     </section>
   )

@@ -6,10 +6,12 @@ import 'swiper/css/navigation';
 import InlfuencerData from './InlfuencerData';
 
 export default () => {
+  
     const [breakpoint, setBreakpoint] = useState({
         slidesPerView: 4,
         spaceBetween: 50,
       });
+
       useEffect(() => {
         const handleResize = () => {
           if (window.innerWidth < 320) {
@@ -50,6 +52,7 @@ export default () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
       }, []);
+      
       const sliderData = InlfuencerData
       
       const swipeSlide = sliderData.map(slide => (

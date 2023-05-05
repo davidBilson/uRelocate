@@ -1,0 +1,19 @@
+#####Plan your application's data structure: Before you start coding, plan out your application's data structure. You will need to create an array of questions and for each question, you will need an array of options.
+
+#####Create a component for the question: Create a React component that displays one question at a time, along with the options. You can use state to keep track of the user's selected answer.
+
+#####Create a component for the next button: Create a separate component for the next button. This component should only be visible once the user has selected an option.
+
+#####Create a component for the pop-up modal: Create a separate component for the pop-up modal that displays the user's results. This component should only be visible once the user has completed all the questions.
+
+#####Create a parent component: Create a parent component that will render the question component, next button component, and pop-up modal component. This component will also manage the state of the application.
+
+#####Handle user input: When the user selects an option, update the state of the application to reflect their answer.
+
+#####Handle the next button: When the user clicks on the next button, update the state of the application to show the next question.
+
+#####Display the results: Once the user has completed all the questions, update the state of the application to show the pop-up modal with the user's results.
+
+#####Style your application: Use CSS to style your application and make it look visually appealing.
+
+#####That's a basic outline of the theoretical process for building a bullet option based questionnaire in ReactJS with the features you described. Good luck!

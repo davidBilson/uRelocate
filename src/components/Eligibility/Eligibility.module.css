@@ -1,0 +1,206 @@
+/**************  
+Base Styles
+**************/
+.link {
+    text-decoration: underline;
+    font-weight: bold;
+    color: blue;
+}
+
+/******************
+Parent Container
+******************/
+.eligibleParentContainer {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 6vh 0;
+}
+.eligibleContainer {
+    width: 100%;
+    height: 75vh;
+    background: var(--color4);
+    box-shadow: 0px 0px 50px rgba(116, 116, 116, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+}
+/****************
+Container One
+****************/
+.elContainerOne {
+    width: 50%;
+    height: 100%;
+    padding: 4% 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***********************
+Container One Child
+***********************/
+.containerOneChild {
+    width: 100%;
+    height: 100%;
+}
+.formTextOne {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.inputArea {
+    width: 100%;
+    background: transparent;
+    padding: 4%;
+    border-radius: 15px;
+    border: 2px solid rgba(116, 116, 116, 0.2);
+    outline: none;
+}
+.terms {
+    cursor: pointer;
+}
+.checkbox {
+    margin-top: 20px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.label {
+    color: rgb(31, 31, 31);
+    padding: 20px 0 10px;
+    display: block;
+}
+.submit {
+    width: 100%;
+    padding: 4%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: var(--color2);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    outline: none;   
+    cursor: pointer;
+}
+.formRegex {
+    font-size: 10px;
+    color: red;
+}
+.checkedRegex {
+    font-size: 10px;
+    color: rgb(0, 206, 0);
+}
+/**************
+Container Two
+**************/
+.elContainerTwo {
+    width: 50%;
+    min-height: 100%;
+    background: url(../../assets/eligiblePic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.elDarkOverlay {
+    width: 100%;
+    height: 100%;
+    padding: 10% 8%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-end;
+}
+.overlayContent {
+    width: 100%;
+    height: fit-content;
+    color: ghostwhite;
+    font-weight: 300;
+}
+.overlayText {
+    font-size: .8rem;
+}
+.overlayText2 {
+    font-size: .8rem;
+    margin-top: .8rem;
+}
+.overlayTextLocation {
+    font-size: .7rem;
+    margin-top: .7rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/*****************
+Tablet Design: there might be future changes for the media queries
+*****************/
+@media screen and (max-width: 1024px) {
+/****************
+Parent container
+****************/
+.eligibleContainer {
+    width: 100%;
+    height: 80vh;
+}
+/****************
+Container One
+****************/
+.elContainerOne {
+    width: 60%;
+}
+/**************
+Container Two
+**************/
+.elContainerTwo {
+    width: 40%;
+}   
+}
+/*****************
+Mobile Design
+*****************/
+@media screen and (max-width: 450px) {
+    
+/******************
+Parent Container
+******************/
+.eligibleContainer {
+    width: 100%;
+    height: fit-content;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow:none; */
+    flex-wrap: wrap;
+}
+/****************
+Container One
+****************/
+.elContainerOne {
+    width: 100%;
+    height: fit-content;
+    padding: 6%;
+}
+.formTextOne {
+    font-size: 1.5rem;
+}
+/****************
+Container Two
+****************/
+.elContainerTwo {
+    width: 100%;
+    min-height: 100%;
+    background: url(../../assets/eligiblePic.jpg);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.elDarkOverlay {
+    padding: 40% 8% 8%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-end;
+}
+}

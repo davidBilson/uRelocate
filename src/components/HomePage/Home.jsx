@@ -1,6 +1,6 @@
-import HeroSection from '../LandingHero/LandingHero'
+import LandingHero from '../LandingHero/LandingHero'
 import SectionTitle from '../FeaturedTitle/FeaturedTitle'
-import GridSection from '../Hero/Hero'
+import HeroGrid from '../Hero/Hero'
 import InfluencerSection from '../Influencer/Influencer'
 import Newsletter from '../NewsLetter/NewsLetter'
 import FourCategory from '../FourCategory/Fourcategory'
@@ -9,9 +9,9 @@ import ExclusiveSection from '../ExclusiveSection/ExclusiveSection'
 const Home = () => {
   return (
     <>
-      <HeroSection />
+      <LandingHero />
       <SectionTitle id="featured" FeaturedTitle="Featured" classNameFeatured="featured-header" FeaturedTag="Releases"/>
-      <GridSection />
+      <HeroGrid />
       <ExclusiveSection />
       <InfluencerSection />
       <FourCategory />

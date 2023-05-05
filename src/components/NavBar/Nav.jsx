@@ -36,7 +36,7 @@ const Nav = () => {
           <NavLink  to="/advert" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Advert</NavLink>
         </li>
         <li>
-          <Link id='loginBtn'  to="/signup" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Sign Up</Link>
+          <Link id='loginBtn'  to="/elibility" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>Eligility</Link>
         </li>
       </ul>
     </div>

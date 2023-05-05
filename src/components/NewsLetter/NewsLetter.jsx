@@ -10,7 +10,7 @@ const NewsLetter = () => {
             message
             ,
             {
-                position: toast.POSITION.TOP_CENTER,
+                position: toast.POSITION.BOTTOM_CENTER,
                 autoClose: 3000
             }
             );

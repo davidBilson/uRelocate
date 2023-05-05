@@ -1,5 +1,3 @@
-// import ExclusiveSection from './components/ExclusiveSection/ExclusiveSection'
-// import FeaturedTitle from './components/FeaturedTitle/FeaturedTitle'
 import Footer from './components/Footer/Footer'
 import NavBar from './components/NavBar/Nav'
 import Top from './components/Top/Top'
@@ -8,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage/Home'
 import AboutUs from './components/AboutUs/About'
 import PageNotFound from './components/PageNotFound/PageNotFound'
+import { Eligibility } from './components/Eligibility/Eligibility'
 
 const App = () => {
   return (
@@ -17,11 +16,11 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='about' element={<AboutUs />} />
+        <Route path="elibility"  element={<Eligibility />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>
   )
 }
-
 export default App

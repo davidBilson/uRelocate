@@ -1,6 +1,8 @@
 import React from 'react'
 import Date from '../DateIcon/Date'
 import ImageOne from '../../assets/image-1.webp'
+import {Link} from 'react-router-dom'
+
 const SingleFooterWidgetTwo = () => {
   return (
     <section className='single-footer-widget'>
@@ -11,7 +13,9 @@ const SingleFooterWidgetTwo = () => {
                         <img src={ImageOne} alt="" />
                     </div>
                     <div>
-                        <h4>Countries Accepting Immigrants Hassle-free</h4>
+                        <h4>
+                        <Link to='/'>Countries Accepting Immigrants Hassle-free</Link>
+                        </h4>
                         <Date date="Feb 22nd, 2023" />
                     </div>
                 </article>
@@ -20,8 +24,10 @@ const SingleFooterWidgetTwo = () => {
                         <img src={ImageOne} alt="" />
                     </div>
                     <div>
-                        <h4>Countries Accepting Immigrants Hassle-free</h4>
-                        <Date date="Feb 9th, 2023" />
+                        <h4>
+                        <Link to='/'>Countries Accepting Immigrants Hassle-free</Link>
+                        </h4>
+                        <Date date="Feb 22nd, 2023" />
                     </div>
                 </article>
                 <article>
@@ -29,8 +35,10 @@ const SingleFooterWidgetTwo = () => {
                         <img src={ImageOne} alt="" />
                     </div>
                     <div>
-                        <h4>Countries Accepting Immigrants Hassle-free</h4>
-                        <Date date="March 11, 2023" />
+                        <h4>
+                        <Link to='/'>Countries Accepting Immigrants Hassle-free</Link>
+                        </h4>
+                        <Date date="Feb 22nd, 2023" />
                     </div>
                 </article>
             </div>
