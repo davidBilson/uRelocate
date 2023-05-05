@@ -42,8 +42,8 @@ export default () => {
           }
            else {
             setBreakpoint({
-              slidesPerView: 4,
-              spaceBetween: 50,
+              slidesPerView: 3.8,
+              spaceBetween: 10,
             });
           }
         };
@@ -57,14 +57,9 @@ export default () => {
       
       const swipeSlide = sliderData.map(slide => (
         <SwiperSlide key={slide.id}>
-        <div className="swiper-content">
-            <div>
+        <a href={slide.link} className="swiper-content">
                 <img src={slide.image} loading="lazy" alt="" />
-            </div>
-            <div>
-                <p>{slide.name}</p>
-            </div>
-        </div>
+        </a>
       </SwiperSlide>
       ))
   return (
