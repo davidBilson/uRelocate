@@ -52,7 +52,7 @@ export default () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
       }, []);
-      
+
       const sliderData = InlfuencerData
       
       const swipeSlide = sliderData.map(slide => (
@@ -75,10 +75,8 @@ export default () => {
     }}
     modules={[Navigation, A11y]}
     spaceBetween={breakpoint.spaceBetween}
-      slidesPerView={breakpoint.slidesPerView}
+    slidesPerView={breakpoint.slidesPerView}
     navigation
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
   >
   {swipeSlide}
     </Swiper>

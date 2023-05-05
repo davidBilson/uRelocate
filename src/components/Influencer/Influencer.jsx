@@ -6,7 +6,7 @@ const Influencer = () => {
   return (
     <section className='influencer-container'>
         <div>
-            <h2>Top Influencers</h2>
+            <h2>Who to follow</h2>
         </div>
         <InfluencerSlider />
     </section>
