@@ -1,12 +1,12 @@
-import { Navigation, A11y } from 'swiper';
+import { Navigation, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState, useEffect } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import InlfuencerData from './InlfuencerData';
 
+
 export default () => {
-  
     const [breakpoint, setBreakpoint] = useState({
         slidesPerView: 4,
         spaceBetween: 50,
@@ -42,7 +42,7 @@ export default () => {
           }
            else {
             setBreakpoint({
-              slidesPerView: 3.8,
+              slidesPerView: 3.5,
               spaceBetween: 10,
             });
           }
@@ -53,22 +53,27 @@ export default () => {
         return () => window.removeEventListener('resize', handleResize);
       }, []);
 
-      const sliderData = InlfuencerData
-      
+      const sliderData = InlfuencerData;
       const swipeSlide = sliderData.map(slide => (
         <SwiperSlide key={slide.id}>
         <a href={slide.link} className="swiper-content">
-                <img src={slide.image} loading="lazy" alt="" />
+                <img src={slide.image} alt="" />
         </a>
       </SwiperSlide>
-      ))
+      ));
   return (
     <Swiper
     style={{
       '--swiper-navigation-color': '#fff',
       '--swiper-navigation-size': '20px',
     }}
-    modules={[Navigation, A11y]}
+    autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+          stopOnLast: true,
+          reverse: true,
+        }}
+    modules={[Navigation, A11y, Autoplay]}
     spaceBetween={breakpoint.spaceBetween}
     slidesPerView={breakpoint.slidesPerView}
     navigation

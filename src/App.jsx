@@ -7,6 +7,8 @@ import HomePage from './components/HomePage/Home'
 import AboutUs from './components/AboutUs/About'
 import PageNotFound from './components/PageNotFound/PageNotFound'
 import { Eligibility } from './components/Eligibility/Eligibility'
+// import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BlogContentStructure } from './components/BlogContentStructure/BlogContentStructure';
 
 const App = () => {
   return (
@@ -17,6 +19,7 @@ const App = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='about' element={<AboutUs />} />
         <Route path="elibility"  element={<Eligibility />} />
+        <Route path="/article/:id" element={<BlogContentStructure />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer />
