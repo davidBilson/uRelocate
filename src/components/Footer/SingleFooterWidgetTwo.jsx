@@ -14,7 +14,7 @@ const SingleFooterWidgetTwo = () => {
                     </div>
                     <div>
                         <h4>
-                        <Link to='/'>Countries Accepting Immigrants Hassle-free</Link>
+                        <Link to='/article/20'>Countries Accepting Immigrants Hassle-free</Link>
                         </h4>
                         <Date date="Feb 22nd, 2023" />
                     </div>

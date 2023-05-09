@@ -56,29 +56,29 @@ export default () => {
       const sliderData = InlfuencerData;
       const swipeSlide = sliderData.map(slide => (
         <SwiperSlide key={slide.id}>
-        <a href={slide.link} className="swiper-content">
-                <img src={slide.image} alt="" />
-        </a>
-      </SwiperSlide>
+          <a href={slide.link} className="swiper-content">
+            <img src={slide.image} alt="" />
+          </a>
+        </SwiperSlide>
       ));
   return (
     <Swiper
-    style={{
-      '--swiper-navigation-color': '#fff',
-      '--swiper-navigation-size': '20px',
-    }}
-    autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-          stopOnLast: true,
-          reverse: true,
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-navigation-size': '20px'
         }}
-    modules={[Navigation, A11y, Autoplay]}
-    spaceBetween={breakpoint.spaceBetween}
-    slidesPerView={breakpoint.slidesPerView}
-    navigation
-  >
-  {swipeSlide}
+        autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+              stopOnLast: true,
+              reverse: true,
+              }}
+        modules={[Navigation, A11y, Autoplay]}
+        spaceBetween={breakpoint.spaceBetween}
+        slidesPerView={breakpoint.slidesPerView}
+        navigation
+    >
+      {swipeSlide}
     </Swiper>
   );
 };

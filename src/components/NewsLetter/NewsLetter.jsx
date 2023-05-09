@@ -1,7 +1,6 @@
 import '../../styles/Newsletter.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {AiFillWarning} from 'react-icons/ai'
 
 const NewsLetter = () => {
     const message = `Email client not available yet!`;

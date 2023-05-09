@@ -24,7 +24,6 @@ const Top = () => {
           <p>{dateString}</p>
           <img src={Ukraine} id="ukraine" alt="" />
         </div>
-        {/* Top bar social media links */}
         <div className="nav-social">
           <p className='dim'>Follow us on</p>
           <a href="#"><FaFacebookF /></a>
