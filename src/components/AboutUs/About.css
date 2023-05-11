@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+.about {
+    background-image: linear-gradient(to bottom, var(--color-0) 50%,  var(--color4) 50%);
+}
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+    user-select: none;
+}
+.about-box-model {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.about-text-heading {
+    max-width: 440px;
+    z-index: 1;
+}
+.about-text-heading h1 {
+    font-size: 5rem;
+}
+.about-text-heading p {
+    font-size: 3rem;
+    font-family: 'Zeyada', cursive;
+}
+.about-parent-image {
+    background-image: url(https://images.pexels.com/photos/5847427/pexels-photo-5847427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    width: 880px;
+    height: 480px;
+    margin-left: -200px;
+    z-index: 0;
+}
+.about-details {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    margin-top: 5rem;
+}
+.about-details > div {
+    width: 40%;
+}
+.about-details > div:nth-child(1) {
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+.about-details > div:nth-child(1) > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.about-details > div:nth-child(1) > ul > li:nth-child(1) {
+    font-weight: 600;
+}
+.about-details > div:nth-child(1) > ul > li {
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid lightgrey;
+    transition: .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-details > div:nth-child(1) > ul > li:hover {
+    border-bottom: 1px solid grey;
+}
+
+.about-details > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-details > div:nth-child(3) > p { 
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 2rem;
+}
+.about-details > div:nth-child(3) > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-details > div:nth-child(3) > div img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 2px solid grey;
+    box-shadow: 0px 5px 20px lightgray;
+}
+.red {
+    color: red;
+}
+.slate {
+    color: rgb(205, 90, 157);
+    font-weight: 700;
+}
+@media  screen and (max-width: 600px) {
+    .about-box-model {
+        flex-direction: column;
+    }
+    .about-text-heading {
+        max-width: 95%;
+        text-align: center;
+    }
+    .about-text-heading h1 {
+        font-size: 3rem;
+    }
+    .about-text-heading p {
+        font-size: 2rem;
+    }
+    .about-parent-image {
+        width: 100%;
+        height: 380px;
+        margin-left: 0px;
+    }
+
+    .about-details {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 4rem;
+    }
+    .about-details > div {
+        width: 100%;
+    }
+
+    /* Last side */
+    .about-details > div:nth-child(1) {
+        width: 100%;
+        order: 1;
+        margin-top: 100px;
+        display: flex;
+    }
+
+    .about-details > div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .about-text-heading h1 {
+        font-size: 2.5rem;
+    }
+}
